@@ -14,7 +14,7 @@ type Person ={
 }
 
 // Function to get the property value of an object
-const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => {
+const getProperty = <T extends Person, K extends keyof T>(obj: T, key: K): T[K] => {
     return obj[key];
 }
 
